@@ -1,4 +1,5 @@
 import 'package:chatgpt/constants/constants.dart';
+import 'package:chatgpt/widgets/chat_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
@@ -50,14 +51,18 @@ class _ChartScreenState extends State<ChartScreen> {
               child: ListView.builder(
                 itemCount: 6,
                 itemBuilder: (context, index) {
-                  return const Text("Hello this is a text");
+                  return ChatWidget(
+                      msg: chatMessages[index]["msg"].toString(),
+                      chatIndex: int.parse(
+                        chatMessages[index]["chatIndex"].toString(),
+                      ));
                 },
               ),
             ),
             if (_isTyping) ...[
               const SpinKitThreeBounce(
                 color: Colors.white,
-                size: 20,
+                size: 18,
               ),
               const SizedBox(height: 15),
               Material(
