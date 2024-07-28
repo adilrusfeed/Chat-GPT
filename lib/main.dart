@@ -1,4 +1,5 @@
 import 'package:chatgpt/constants/constants.dart';
+import 'package:chatgpt/screens/chat_screens.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
           appBarTheme: AppBarTheme(
             color: cardColor,
           )),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const ChartScreen(),
     );
   }
 }
