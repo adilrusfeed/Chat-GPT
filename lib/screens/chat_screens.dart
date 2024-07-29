@@ -62,7 +62,7 @@ class _ChartScreenState extends State<ChartScreen> {
             if (_isTyping) ...[
               const SpinKitThreeBounce(
                 color: Colors.white,
-                size: 18,
+                size: 20,
               ),
               const SizedBox(height: 15),
               Material(
