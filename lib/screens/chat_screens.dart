@@ -1,5 +1,7 @@
 import 'package:chatgpt/constants/constants.dart';
+import 'package:chatgpt/widgets/bottom_sheet.dart';
 import 'package:chatgpt/widgets/chat_widget.dart';
+import 'package:chatgpt/widgets/text_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
@@ -37,7 +39,9 @@ class _ChartScreenState extends State<ChartScreen> {
           title: const Text("ChatGPT"),
           actions: [
             IconButton(
-                onPressed: () {},
+                onPressed: () async {
+                  await BottomSheetWidget.showModalSheet(context: context);
+                },
                 icon: const Icon(
                   Icons.more_vert_rounded,
                   color: Colors.white,
