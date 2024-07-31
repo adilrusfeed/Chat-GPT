@@ -15,7 +15,7 @@ class BottomSheetWidget {
         context: context,
         builder: (context) {
           return const Padding(
-            padding:  EdgeInsets.all(18.0),
+            padding: EdgeInsets.all(18.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -25,7 +25,7 @@ class BottomSheetWidget {
                     fontSize: 16,
                   ),
                 ),
-                // Flexible(flex: 2, child: ModelsDrowDownWidget()),
+                Flexible(flex: 2, child: DropDownWidget())
               ],
             ),
           );

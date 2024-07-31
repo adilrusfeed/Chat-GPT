@@ -1,7 +1,6 @@
 import 'package:chatgpt/constants/constants.dart';
 import 'package:chatgpt/widgets/bottom_sheet.dart';
 import 'package:chatgpt/widgets/chat_widget.dart';
-import 'package:chatgpt/widgets/text_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
