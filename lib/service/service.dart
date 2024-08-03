@@ -12,7 +12,7 @@ class ApiService {
       Map jsonResponse = jsonDecode(response.body);
       if (jsonResponse['error'] != null) {
         print("jsonResponse['error] ${jsonResponse['error']['message']}");
-        throw HttpException(jsonResponse['error']['message']);
+        throw HttpException(jsonResponse['error']['messages']);
       }
       print("jsonResponse $jsonResponse");
     } catch (error) {
