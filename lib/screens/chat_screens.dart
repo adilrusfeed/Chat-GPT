@@ -1,4 +1,5 @@
 import 'package:chatgpt/constants/constants.dart';
+import 'package:chatgpt/service/service.dart';
 import 'package:chatgpt/widgets/bottom_sheet.dart';
 import 'package:chatgpt/widgets/chat_widget.dart';
 import 'package:flutter/material.dart';
@@ -84,7 +85,13 @@ class _ChartScreenState extends State<ChartScreen> {
                             hintStyle: TextStyle(color: Colors.white)),
                       )),
                       IconButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            try {
+                              ApiService.getModels();
+                            } catch (error) {
+                              print("error $error");
+                            }
+                          },
                           icon: const Icon(
                             Icons.send,
                             color: Colors.white,
